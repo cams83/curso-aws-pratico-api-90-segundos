@@ -22,9 +22,11 @@ services:
     container_name: "cursoaws_mysql"
     image: cursoaws_mysql
     user: root
-    environment:
-      MYSQL_ROOT_PASSWORD: root
+    environment:       
+      MYSQL_ROOT_PASSWORD: RootPassword
       MYSQL_DATABASE: dev_cursoaws
+      MYSQL_USER: MainUser
+      MYSQL_PASSWORD: MainPassword      
     volumes:
       - ./:/app/
     expose:
